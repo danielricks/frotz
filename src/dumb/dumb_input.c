@@ -67,7 +67,7 @@ static int xgetchar(void)
     int c = getchar();
     if (c == EOF) {
 	if (feof(stdin)) {
-	    fprintf(stderr, "\nEOT\n");
+	    fprintf(stderr, "");
 	    exit(0);
 	}
 	os_fatal(strerror(errno));
